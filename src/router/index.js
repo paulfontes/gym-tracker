@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { authGuard } from '@auth0/auth0-vue'
 
+import WorkoutDetailView from '@/views/WorkoutDetailView.vue'
 import HomeView from '@/views/HomeView.vue'
 import AppLayout from '@/views/AppLayout.vue'
 import WorkoutsView from '@/views/WorkoutsView.vue'
@@ -14,6 +15,7 @@ const routes = [
     children: [
       { path: '', redirect: '/app/workouts' },
       { path: 'workouts', name: 'workouts', component: WorkoutsView },
+      { path: 'workouts/:id', name: 'workout-detail', component: WorkoutDetailView },
     ],
   },
   { path: '/:pathMatch(.*)*', redirect: '/' },
