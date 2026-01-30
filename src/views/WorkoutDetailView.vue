@@ -36,7 +36,7 @@ const goBack = () => router.push('/app/workouts')
     <div class="card">
       <div class="card-body">
         <h5 class="card-title mb-2">Exercises (next)</h5>
-        <p class="text-muted m-0">Next we'll add exercises + sets here.</p>
+        <p class="text-muted m-0">Next we'll add exercises + sets here!</p>
       </div>
     </div>
   </div>
