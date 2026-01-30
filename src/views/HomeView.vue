@@ -20,6 +20,10 @@ const handleLogout = () => {
     </button>
 
     <button v-else class="btn btn-outline-danger" @click="handleLogout()">Log out</button>
+
+    <RouterLink v-if="isAuthenticated" to="/app" class="btn btn-success ms-2">
+      Go to app
+    </RouterLink>
   </div>
 </template>
 <style></style>
